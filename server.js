@@ -7,10 +7,21 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
+// /dist/ folder path
+const DIST_DIR = path.join(__dirname, '../dist');
+// ./dist/index.html file path
+// const HTML_FILE = path.join(DIST_DIR, 'index.html');
+app.use(express.static(DIST_DIR));
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'index.html'));
+  res.sendFile(path.resolve(__dirname, '../dist/index.html'));
 });
-app.listen(8080, () => {
-  console.log('listening on Port 8080');
+
+// app.get('/', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, 'index.html'));
+// });
+
+// app.use('/build', express.static(path.join(__dirname, '../dist')));
+
+app.listen(3000, () => {
+  console.log('listening on Port 3000');
 });
