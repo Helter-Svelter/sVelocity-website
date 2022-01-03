@@ -4,19 +4,20 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production nodemon server.js ",
-    "build": "cross-env NODE_ENV=development webpack --config webpack.config.js",
-    "dev": "cross-env NODE_ENV=development concurrently \"nodemon server/server.js\" \"webpack-dev-server --open\""
+    "build": "webpack --mode production",
+    "dev": "concurrently \"webpack serve --mode development\" \"node server.js\""
   },
   "repository": "https://github.com/Helter-Svelter/sVelocity-website.git",
   "author": "AllieMarzieh <alliegramy1993@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.16.7",
-    "babel-loader": "^8.2.3",
     "@babel/preset-env": "^7.16.0",
+    "babel-loader": "^8.2.3",
     "concurrently": "^6.5.1",
     "cross-env": "^7.0.3",
     "express": "^4.17.2",
+    "html-webpack-plugin": "^5.5.0",
     "nodemon": "^2.0.15",
     "svelte": "^3.44.3",
     "svelte-loader": "^3.1.2",

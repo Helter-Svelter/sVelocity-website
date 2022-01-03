@@ -12,8 +12,9 @@ const DIST_DIR = path.join(__dirname, '../dist');
 // ./dist/index.html file path
 // const HTML_FILE = path.join(DIST_DIR, 'index.html');
 app.use(express.static(DIST_DIR));
+
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../dist/index.html'));
+  return res.status(200).sendFile(path.resolve(__dirname, './dist/index.html'));
 });
 
 // app.get('/', (req, res) => {
