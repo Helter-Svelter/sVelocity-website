@@ -9,7 +9,7 @@
 <div class="editor-div">
   <img class="editor-img" src={textEditor} alt="Code editor" />
   <h5>
-    Implemented a Codemirror text editor to build your application's code with.
+    A text editor to build your application's code with.
   </h5>
 </div>
 <div class="terminal-div">
@@ -22,7 +22,7 @@
 </div>
 <div class="devTools-div"> 
 <img class="devTools" src={devTools} alt="devtools" />
-<h5> Built in developer tools to guide you when debugging your code.
+<h5> Built in developer tools to guide you when you debug your code.
 </h5> 
 </div>  
 </div>

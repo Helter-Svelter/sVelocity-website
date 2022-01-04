@@ -6,22 +6,23 @@
   <a id = "github-icon" href="https://github.com/oslabs-beta/sVelocity"><i class="fa fa-github" style="font-size:36px"></i></a>
   <a id="linkedin-icon"  href="/" > <img class="linkedin-img" src={linkedin} alt="linkedin" /> </a>
 </nav>
-<h3>
+<!-- <h3>
   you're a star baby! 
-</h3>
+</h3> -->
 
 <style>
-  h3 {
+  /* h3 {
   background-color: pink;
 
-  }
+  } */
   nav{
-    display : flex;
+    display: flex;
     list-style: none;
     border-bottom: 1px solid lightblue;
-    transition : border-bottom 0.5;
+    transition: border-bottom 0.5;
     background-color: lavender; 
     justify-content: flex-end;
+    margin: 0;
   } 
 
   .linkedin-img{

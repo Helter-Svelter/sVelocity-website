@@ -1,6 +1,7 @@
 <div class="header">
-  <h1>Header</h1>
-  <p>My supercool header</p>
+  <h1>sVelocity</h1>
+  <p> Everything all in one.</p>
+
 </div>
 
 <style>
