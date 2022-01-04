@@ -29,7 +29,39 @@
 
 <style>
 
-  .icon-wrapper{ 
+.icon-wrapper{
+display: flex;
+justify-content: space-evenly;
+background-color: #f8f7ff;
+
+
+}
+
+div.icon-wrapper > div{
+  /* margin-left: 15%; */
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+}
+
+div.icon-wrapper > div > img {
+  height: 100px;
+    width: auto;
+   
+
+}
+
+div.icon-wrapper > div > h5 {
+  text-align: center;
+  max-width: 140px;
+  color : #9382fd;
+  
+
+}
+
+
+  /* .icon-wrapper{ 
     display: flex;
     color : #9382fd;
 
@@ -37,7 +69,7 @@
 
   .editor-div {
     margin-left: 15%;
-    /* max-width: 100px; */
+   
   }
   .editor-img {
     height: 100px;
@@ -50,7 +82,7 @@
   }
   .terminal-div{
     margin-left: 15%;
-    /* max-width : 100px; */
+
 
   }
 
@@ -69,5 +101,5 @@
   .devTools {
     height: 100px;
     width: auto;
-  }
+  } */
 </style>
