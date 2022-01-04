@@ -14,23 +14,28 @@
   </p>
 
   <div class="icon-wrapper">
-    <div class="editor-div">
-      <img class="editor-img" src={textEditor} alt="Code editor" />
-      <h5>A text editor to build your application's code with.</h5>
+    <div class="left-icons">
+      <div class="editor-div">
+        <img class="editor-img" src={textEditor} alt="Code editor" />
+        <h5>A text editor to build your application's code with.</h5>
+      </div>
+      <div class="terminal-div">
+        <img class="terminal" src={terminal} alt="Terminal" />
+        <h5>
+          A built in terminal so you can run in-line commands in the
+          application!
+        </h5>
+      </div>
     </div>
-    <div class="terminal-div" >
-      <img class="terminal" src={terminal} alt="Terminal" />
-      <h5>
-        A built in terminal so you can run in-line commands in the application!
-      </h5>
-    </div>
-    <div class="browser-div">
-      <img class="browser" src={browser} alt="Broswer View" />
-      <h5>A browser view to preview your product.</h5>
-    </div>
-    <div class="devTools-div">
-      <img class="devTools" src={devTools} alt="devtools" />
-      <h5>Built in developer tools to guide you when you debug your code.</h5>
+    <div class="right-icons">
+      <div class="browser-div">
+        <img class="browser" src={browser} alt="Broswer View" />
+        <h5>A browser view to preview your product.</h5>
+      </div>
+      <div class="devTools-div">
+        <img class="devTools" src={devTools} alt="devtools" />
+        <h5>Built in developer tools to guide you when you debug your code.</h5>
+      </div>
     </div>
   </div>
 </div>
@@ -39,7 +44,7 @@
   .whatIsSvelte-wrapper {
     background-color: #eae8f8;
     text-align: center;
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 200px); */
   }
 
   h3 {
@@ -56,53 +61,36 @@
     padding: 20px 0 40px 0;
     font-size: 130%;
     line-height: 135%;
-    margin-bottom: 10%;
-    
   }
 
   .icon-wrapper {
-    /* display: flex;
-    justify-content: space-evenly; */
-    /* background-color: #f8f7ff; */
     display: flex;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   div.icon-wrapper > div {
-    /* margin-left: 15%; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center; */
     flex: 20%;
     padding: 20px;
   }
 
-  div.icon-wrapper > div > img {
+  div.icon-wrapper > div > div > img {
     height: 100px;
     width: auto;
   }
 
-  div.icon-wrapper > div > h5 {
-    text-align: center;
-    max-width: 140px;
-    color: #0f0459;
-    font-size: 100%;
-    font-weight: 300;
-    flex: 20%;
-    padding: 20px;
+  div.icon-wrapper > div > div > h5 {
+    margin-bottom: 10%;
+  }
+  @media screen and (max-width: 650px) {
+    div.icon-wrapper > div {
+      flex: 50%;
+    }
   }
 
-  @media screen and (max-width: 992px) {
-    div.icon-wrapper > div,  div.icon-wrapper > div > h5 {
-    flex: 50%;
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .icon-wrapper {
+      flex-direction: column;
+    }
   }
-}
-
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .icon-wrapper {
-    flex-direction: column;
-  }
-}
 </style>
