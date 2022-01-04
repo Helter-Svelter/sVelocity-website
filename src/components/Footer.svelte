@@ -13,14 +13,13 @@
     
     }
 
-    /* .sponser {
-      align-items: flex-start;
-      padding
-      ; 30;
-    }    */
+    .sponser {
+      margin-right: 2%;
+    }   
 
     .copyright {
      align-items: flex-end;
+     margin-left: 2%;
 
     }
 </style>

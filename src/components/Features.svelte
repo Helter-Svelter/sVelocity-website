@@ -14,7 +14,7 @@
 </div>
 <div class="terminal-div">
   <img class="terminal" src={terminal} alt="Terminal" />
-  <h5> A built in terminal so you can run in-line commands in the application! </h5>
+  <h5> A built in terminal so you can run in-line commands in the application. </h5>
 </div>
 <div class="browser-div">
   <img class="browser" src={browser} alt="Broswer View" />

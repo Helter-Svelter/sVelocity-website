@@ -1,7 +1,3 @@
-<script>
-  import linkedin from '../assets/linkedin.png';
-</script>
-
 <nav>
   <link
     rel="stylesheet"
@@ -13,6 +9,10 @@
 
   <a class="linkedin-img" href="https://www.linkedin.com/">
     <i class="fa fa-linkedin-square" style="font-size:36px; color: white;" />
+  </a>
+
+  <a class="article-icon" href="https://medium.com/p/f36ff395f299/edit">
+    <i class="fa fa-medium" style="font-size:36px"></i>
   </a>
   <!-- <a id="linkedin-icon"  href="/" > <img class="linkedin-img" src={linkedin} alt="linkedin" /> </a> -->
 </nav>
@@ -49,5 +49,9 @@
     width: auto;
     margin-left: 10px;
     /* #551a8b */
+  }
+  .article-icon{
+  font-size: 36px;
+  color: white;
   }
 </style>
