@@ -55,7 +55,7 @@ div.icon-wrapper > div > img {
 div.icon-wrapper > div > h5 {
   text-align: center;
   max-width: 140px;
-  color : #9382fd;
+  color : #0f0459;
   
 
 }

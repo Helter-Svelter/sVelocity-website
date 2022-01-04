@@ -1,37 +1,108 @@
-<div class="whatIsSvelte-wrapper"> 
+<script>
+  import textEditor from '../assets/text-editor.png';
+  import terminal from '../assets/terminal.png';
+  import browser from '../assets/browser.png';
+  import devTools from '../assets/settings.png';
+  let alt = 'code editor icon';
+</script>
 
-<h3>
-  What is sVelocity?
-</h3>
+<div class="whatIsSvelte-wrapper">
+  <h3>What is sVelocity?</h3>
+  <p>
+    sVelocity is an open-source integrated developer environment for Svelte.
+    Everything you need to create your application is all in one place!
+  </p>
 
-<p>sVelocity is an open-source integrated developer environment for Svelte. Everything you need to create your application is all in one place!</p>
-
-
+  <div class="icon-wrapper">
+    <div class="editor-div">
+      <img class="editor-img" src={textEditor} alt="Code editor" />
+      <h5>A text editor to build your application's code with.</h5>
+    </div>
+    <div class="terminal-div" >
+      <img class="terminal" src={terminal} alt="Terminal" />
+      <h5>
+        A built in terminal so you can run in-line commands in the application!
+      </h5>
+    </div>
+    <div class="browser-div">
+      <img class="browser" src={browser} alt="Broswer View" />
+      <h5>A browser view to preview your product.</h5>
+    </div>
+    <div class="devTools-div">
+      <img class="devTools" src={devTools} alt="devtools" />
+      <h5>Built in developer tools to guide you when you debug your code.</h5>
+    </div>
+  </div>
 </div>
 
 <style>
-.whatIsSvelte-wrapper{
-background-color:#f8f7ff;
-text-align: center;
+  .whatIsSvelte-wrapper {
+    background-color: #eae8f8;
+    text-align: center;
+    height: calc(100vh - 100px);
+  }
 
+  h3 {
+    margin: 0;
+    padding: 20px 0 0 0;
+    font-weight: 300;
+    font-size: 300%;
+    margin-bottom: 15px;
+    color: #0f0459;
+  }
 
+  p {
+    margin: 0;
+    padding: 20px 0 40px 0;
+    font-size: 130%;
+    line-height: 135%;
+    margin-bottom: 10%;
+    
+  }
+
+  .icon-wrapper {
+    /* display: flex;
+    justify-content: space-evenly; */
+    /* background-color: #f8f7ff; */
+    display: flex;
+  flex-wrap: wrap;
+  }
+
+  div.icon-wrapper > div {
+    /* margin-left: 15%; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; */
+    flex: 20%;
+    padding: 20px;
+  }
+
+  div.icon-wrapper > div > img {
+    height: 100px;
+    width: auto;
+  }
+
+  div.icon-wrapper > div > h5 {
+    text-align: center;
+    max-width: 140px;
+    color: #0f0459;
+    font-size: 100%;
+    font-weight: 300;
+    flex: 20%;
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 992px) {
+    div.icon-wrapper > div,  div.icon-wrapper > div > h5 {
+    flex: 50%;
+  }
 }
 
-
-h3{
-  margin: 0;
-  padding: 20px 0 0 0;
-
-
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .icon-wrapper {
+    flex-direction: column;
+  }
 }
-
-
-p{
-margin : 0;
-padding: 20px 0 40px 0;
-
-}  
-
-
-
 </style>
