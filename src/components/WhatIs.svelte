@@ -50,7 +50,7 @@
   h3 {
     margin: 0;
     padding: 20px 0 0 0;
-    font-weight: 300;
+    font-weight: 350;
     font-size: 300%;
     margin-bottom: 15px;
     color: #0f0459;
@@ -80,7 +80,9 @@
 
   div.icon-wrapper > div > div > h5 {
     margin-bottom: 10%;
+    font-size: 100%;
   }
+
   @media screen and (max-width: 650px) {
     div.icon-wrapper > div {
       flex: 50%;
@@ -91,6 +93,14 @@
   @media screen and (max-width: 600px) {
     .icon-wrapper {
       flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 475px) {
+    h3 {
+      font-size: 200%;
+    }
+    p {
+      font-size: 75%;
     }
   }
 </style>
