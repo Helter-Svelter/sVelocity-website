@@ -56,6 +56,23 @@
     </div>
     <!-- add a tag for my name, and the github and linkded in -->
   </div>
+
+  <!-- <div class="avatar4">
+    <img class="avatar" src={Justin} alt="Avatar 4" />
+    <div class="name"><p>Justin Blalock</p></div>
+    <div class="icon-div">
+      <a id="github-icon" href="https://github.com/jmblalock"
+        ><i class="fa fa-github" style="font-size:36px; color: #120563;" /></a
+      >
+      <a class="linkedin-img" href="https://www.linkedin.com/in/justinmblalock/">
+        <i
+          class="fa fa-linkedin-square"
+          style="font-size:36px; color: #120563;"
+        />
+      </a>
+    </div>
+    add a tag for my name, and the github and linkded in
+  </div> -->
 </div>
 
 
