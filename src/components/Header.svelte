@@ -41,7 +41,8 @@ p {
 
   @media screen and (max-width: 400px) {
     .logo {
-      height: 15%;
+      height: 20%;
+      min-height: 15%;
     }
   }
 </style>

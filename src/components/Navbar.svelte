@@ -6,7 +6,7 @@
   <a id="github-icon" href="https://github.com/oslabs-beta/sVelocity"
     ><i class="fa fa-github" style="font-size:36px; color: white;" /></a
   >
-
+<!-- fix github icon margins -->
   <a class="linkedin-img" href="https://www.linkedin.com/">
     <i class="fa fa-linkedin-square" style="font-size:36px; color: white;" />
   </a>
@@ -47,8 +47,6 @@
   .linkedin-img {
     height: 36px;
     width: auto;
-    margin-left: 10px;
-    /* #551a8b */
   }
   .article-icon{
   font-size: 36px;

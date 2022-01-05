@@ -8,6 +8,7 @@
 <div class="team-container">
   <h3 class="team">sVelocity Team</h3>
   <div class="team-outer-container">
+
     <div class="avatar1">
       <img class="avatar" src={Tehya} alt="Avatar 1" />
       <div class="name"><p>Tehya Rassman</p></div>
@@ -27,7 +28,6 @@
       </div>
       <!-- add a tag for my name, and the github and linkded in -->
     </div>
-
     <div class="avatar2">
       <img class="avatar" src={Eleni} alt="Avatar 2" />
       <div class="name"><p>Eleni Zoumpoulaki</p></div>
@@ -44,7 +44,6 @@
       </div>
       <!-- add a tag for my name, and the github and linkded in -->
     </div>
-
     <div class="avatar3">
       <img class="avatar" src={Allie} alt="Avatar 3" />
       <div class="name"><p>Allison Gramy</p></div>
@@ -144,6 +143,7 @@
       flex-direction: column;
       align-items: center;
     }
+
   }
 
   @media screen and (max-width: 475px) {

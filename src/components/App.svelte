@@ -5,11 +5,13 @@
   import Instructions from '../components/Instructions.svelte'
   import MeetTeam from '../components/MeetTeam.svelte';
   import Footer from '../components/Footer.svelte';
+  import ImageCarousel from './ImageCarousel.svelte';
 </script>
 <Navbar />
 <Header />
 <WhatIs />
 <Instructions/>
+<ImageCarousel/>
 <MeetTeam/>
 <Footer />
 
