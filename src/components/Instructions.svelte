@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: calc(100vh - 100px);
+    height: 100vh;
     background-image: linear-gradient(180deg, #120563, #200e97, #3926af);
   }
 
@@ -63,7 +63,13 @@
 
   @media screen and (max-width: 1160px) {
     img {
-      height: 250px
+      height: 250px;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    img {
+      height: 225px
     }
     p {
       font-size: 125%
