@@ -27,8 +27,8 @@
   </ol>
   <aside class="carousel_navigation">
     <ol class="carousel_navigation-list">
-      <li>
-        <a href="carousel_slide1">
+      <li class="carousel_navigation-item">
+        <a href="carousel_slide1" class="carousel_navigation-button">
           Go to slide 1
         </a>
       </li>
