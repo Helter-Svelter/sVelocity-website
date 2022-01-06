@@ -23,7 +23,6 @@
 <style>
   /* h3 {
   background-color: pink;
-
   } */
   nav {
     display: flex;
@@ -37,13 +36,11 @@
     position: sticky; */
     top: 0;
   }
-
   a {
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 1rem;
   }
-
   .linkedin-img {
     height: 36px;
     width: auto;

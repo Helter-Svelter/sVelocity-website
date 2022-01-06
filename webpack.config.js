@@ -5,6 +5,7 @@ const postcssImport = require('postcss-import');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: '/index.html',
+  favicon: "./favicon.ico"
 });
 module.exports = {
   mode: process.env.NODE_ENV,
