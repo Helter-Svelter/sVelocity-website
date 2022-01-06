@@ -133,9 +133,11 @@
 
   .container {
     max-width: 47.5rem;
-    margin: 0 auto;
+    margin: 0 auto 0;
     padding: 0 1.25rem;
     font-family: 'Lato', sans-serif;
+    background-color: #d8d3fa;
+    padding-top: 50px;
   }
 
   * {
