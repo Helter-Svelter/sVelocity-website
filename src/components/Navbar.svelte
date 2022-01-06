@@ -11,7 +11,7 @@
     <i class="fa fa-linkedin-square" style="font-size:36px; color: white;" />
   </a>
 
-  <a class="article-icon" href="https://medium.com/p/f36ff395f299/edit">
+  <a class="article-icon" href="https://medium.com/@svelocity1/svelocity-your-new-coding-environment-exclusively-for-svelte-805dc1007420">
     <i class="fa fa-medium" style="font-size:36px" />
   </a>
   <!-- <a id="linkedin-icon"  href="/" > <img class="linkedin-img" src={linkedin} alt="linkedin" /> </a> -->
