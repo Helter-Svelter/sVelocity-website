@@ -79,6 +79,9 @@ module.exports = {
       },
     ],
   },
+    performance: {
+      hints: false
+    },
   resolve: {
     extensions: ['.mjs', '.js', '.svelte'],
   },

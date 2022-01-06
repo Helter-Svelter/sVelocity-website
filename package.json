@@ -5,6 +5,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production nodemon server.js ",
     "build": "webpack --mode production",
+    "serve": "concurrently \"webpack serve --mode production\" \"node server.js\"",
     "dev": "concurrently \"webpack serve --mode development\" \"node server.js\""
   },
   "repository": "https://github.com/Helter-Svelter/sVelocity-website.git",
