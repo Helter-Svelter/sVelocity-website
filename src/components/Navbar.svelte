@@ -6,13 +6,13 @@
   <a id="github-icon" href="https://github.com/oslabs-beta/sVelocity"
     ><i class="fa fa-github" style="font-size:36px; color: white;" /></a
   >
-<!-- fix github icon margins -->
+  <!-- fix github icon margins -->
   <a class="linkedin-img" href="https://www.linkedin.com/">
     <i class="fa fa-linkedin-square" style="font-size:36px; color: white;" />
   </a>
 
   <a class="article-icon" href="https://medium.com/p/f36ff395f299/edit">
-    <i class="fa fa-medium" style="font-size:36px"></i>
+    <i class="fa fa-medium" style="font-size:36px" />
   </a>
   <!-- <a id="linkedin-icon"  href="/" > <img class="linkedin-img" src={linkedin} alt="linkedin" /> </a> -->
 </nav>
@@ -33,12 +33,12 @@
     height: 100px;
     justify-content: flex-end;
     margin: 0;
-    position: -webkit-sticky;
-    position: sticky;
+    /* position: -webkit-sticky;
+    position: sticky; */
     top: 0;
   }
 
-  a  {
+  a {
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 1rem;
@@ -48,8 +48,8 @@
     height: 36px;
     width: auto;
   }
-  .article-icon{
-  font-size: 36px;
-  color: white;
+  .article-icon {
+    font-size: 36px;
+    color: white;
   }
 </style>
