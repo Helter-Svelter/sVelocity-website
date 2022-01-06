@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production nodemon server.js ",
+    "start": "concurrently \"webpack serve --mode production\" \"node server.js\"",
     "build": "webpack --mode production",
     "dev": "concurrently \"webpack serve --mode development\" \"node server.js\""
   },
