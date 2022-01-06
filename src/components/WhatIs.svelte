@@ -44,7 +44,6 @@
   .whatIsSvelte-wrapper {
     background-color: #eae8f8;
     text-align: center;
-    /* height: calc(100vh - 200px); */
   }
 
   h3 {

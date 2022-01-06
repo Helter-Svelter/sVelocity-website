@@ -1,59 +1,58 @@
 <script>
-  //import screenshots
-  import darkMode from '../assets/dark-mode.png';
-  import lightMode from '../assets/light-mode.png';
+  import dmgFile from '../assets/dmg-file.png';
+  import zipFile from '../assets/zip-file-format.png';
 </script>
 
 <!-- add a link for the download of the app with a tags -->
-<div class="gif-container" />
+<p class="download-title"> Download the DMG or Zip</p>
 
 <div class="instructions-container">
-  <div>
-    <img class="lightMode" src={darkMode} alt="Dark mode screenshot" /><br />
-    <img class="darkMode" src={lightMode} alt="Dark mode screenshot" />
-  </div>
   <div class="links">
-    <p>
-      Download sVelocity <a
-        href="https://github.com/oslabs-beta/sVelocity/releases/download/v1.0.0/sVelocity-1.0.0-mac.dmg"
-        alt="download dmg">here!</a
-      >
-    </p>
-    <p>_________________________________</p>
-    <p class="bottom-p">
-      Find out how to use the app and contribute to the open source product <a
-        href="https://github.com/oslabs-beta/sVelocity">here!</a
-      >
-    </p>
+    <a  href="https://github.com/oslabs-beta/sVelocity/releases/download/v1.0.0/sVelocity-1.0.0-mac.dmg"
+    alt="download dmg"><img class="dmg" src={dmgFile} alt="dmg icon" /></a>
+
+    <a  href="https://github.com/oslabs-beta/sVelocity/releases/download/v1.0.0/sVelocity-1.0.0-mac.zip"
+    alt="download dmg"><img class="dmg" src={zipFile} alt="zip icon" /></a>
   </div>
+  <p class="bottom-p">
+    Find out how to use the app and contribute to the open source product <a
+      href="https://github.com/oslabs-beta/sVelocity">here!</a
+    >
+  </p>
 </div>
 
 <style>
   .instructions-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100vh;
+    height: 80vh;
     background-image: linear-gradient(180deg, #120563, #200e97, #3926af);
   }
 
-  .lightMode {
-    margin-bottom: 20px;
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
   }
+
+.dmg {
+  height: 200px;
+}
 
   .bottom-p {
     margin-top: 0.8rem;
   }
 
-  img {
-    height: 300px;
-    margin-left: 0.5rem;
+  .download-title {
+    margin: 0;
+    padding-top: 50px;
+    color: #feeedd;
+    font-size: 135%;
+    text-align: center;
+    font-weight: 300;
+    background-color: #120563;
   }
 
-  p {
-    margin: 0;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+  .bottom-p {
     color: #feeedd;
     font-size: 135%;
     text-align: center;
@@ -64,16 +63,8 @@
     color: #bebeff;
   }
 
-  @media screen and (max-width: 1160px) {
-    img {
-      height: 250px;
-    }
-  }
-
+  
   @media screen and (max-width: 990px) {
-    img {
-      height: 225px;
-    }
     p {
       font-size: 125%;
     }
@@ -82,24 +73,23 @@
     .instructions-container {
       flex-direction: column;
     }
-    img {
-      height: 220px;
-    }
     p {
       font-size: 100%;
       margin-left: 0.2rem;
     }
   }
 
-  @media screen and (max-width: 660px) {
-    img {
-      height: 200px;
+  @media screen and (max-width: 450px) {
+    .links {
+      flex-direction: column;
     }
-  }
+    .dmg {
+      height: 100px;
+      margin-top: 20px;
+    }
 
-  @media screen and (max-width: 380px) {
-    img {
-      height: 150px;
+    .bottom-p {
+      font-size: 100%;
     }
   }
 </style>

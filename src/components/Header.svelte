@@ -13,7 +13,6 @@
   padding: 60px;
   text-align: center;
 
-  /* font-size: 30px; */
   height: calc(100vh - 200px);
   background-image: linear-gradient(0deg, #120563, #200e97, #3926af);
 }
